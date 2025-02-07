@@ -3,143 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio 3D</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #f3f3f3;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            background: #1e1e1e;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-            color: #bbbbbb;
-        }
-
-        main {
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
-        }
-
-        .model-card {
-            background: #1e1e1e;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .model-card iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
-        }
-
-        .model-card h3 {
-            margin: 10px;
-            font-size: 1.5em;
-        }
-
-        .model-card p {
-            margin: 10px;
-            color: #bbbbbb;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e1e1e;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 1em;
-            color: #bbbbbb;
-        }
-
-        .backup-links {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .backup-links a {
-            color: #4caf50;
-            text-decoration: none;
-            display: block;
-            margin: 5px 0;
-        }
-
-        .backup-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>TecniPro</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>Mi Portafolio 3D Jonathan Mendoza Martinez</h1>
-        <p>Explora mis creaciones en 3D de Blender y Maya</p>
+        <div class="banner">
+            <h1>TecniPro</h1>
+            <p>¡Servicios de Reparación y Mantenimiento a Domicilio!</p>
+            <button class="btn">Solicitar Técnico</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="/productos.html">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="/carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-        <div class="model-card">
-            <iframe src="https://app.spline.design/file/be04f6d5-bd2b-436c-8fc9-c3f56503d2b0" allowfullscreen loading="lazy"></iframe>
-            <h3>Tren</h3>
+    
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <img src="img/servicio1.png" alt="Reparación de electrodomésticos">
+                <p>Solucionamos problemas con tu lavadora, refrigerador, microondas y más.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/servicio2.png" alt="Instalación de software">
+                <p>Instalación de software, limpieza de hardware y mantenimiento de PC.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/servicio3.png" alt="Revisión de aire acondicionado">
+                <p>Revisión y reparación de aires acondicionados.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/servicio4.png" alt="Averías eléctricas">
+                <p>Atendemos averías eléctricas, instalación de contactos y más.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="model-card">
-            <iframe src="https://app.spline.design/file/ca4b5426-f842-4a4f-a13e-6bbe3fb8edec" allowfullscreen loading="lazy"></iframe>
-            <h3>Comedor</h3>
-        </div>
+    <section id="nosotros">
+        <h2>Quiénes Somos</h2>
+        <p>Somos un equipo de profesionales con más de 5 años de experiencia...</p>
+        <h3>Misión</h3>
+        <p>Brindar soluciones técnicas inmediatas y confiables...</p>
+        <h3>Visión</h3>
+        <p>Ser la plataforma de referencia en el sector...</p>
+        <h3>Valores</h3>
+        <p>Transparencia, Calidad, Profesionalismo, Compromiso.</p>
+    </section>
 
-        <div class="model-card">
-            <iframe src="https://app.spline.design/file/ed7be811-660f-439a-8872-d7f60741a913" allowfullscreen loading="lazy"></iframe>
-            <h3>Casa</h3>
-        </div>
-
-        <div class="model-card">
-            <iframe src="https://app.spline.design/file/48b90580-12a9-41c8-8fbf-2b49cab82daa" allowfullscreen loading="lazy"></iframe>
-            <h3>Carro</h3>
-        </div>
-
-        <div class="model-card">
-            <iframe src="https://app.spline.design/file/bc614c1a-20fd-4e6b-9537-0f73ce55b0fe" allowfullscreen loading="lazy"></iframe>
-            <h3>Piano</h3>
-        </div>
-
-        <div class="model-card">
-            <iframe src="https://app.spline.design/file/8b907047-3577-426d-9279-47d1a08cfe5d" allowfullscreen loading="lazy"></iframe>
-            <h3>Ciudad</h3>
-        </div>
-    </main>
-
-    <div class="backup-links">
-        <h2>Links de respaldo</h2>
-        <a href="https://app.spline.design/file/be04f6d5-bd2b-436c-8fc9-c3f56503d2b0" target="_blank">Tren</a>
-        <a href="https://app.spline.design/file/ca4b5426-f842-4a4f-a13e-6bbe3fb8edec" target="_blank">Comedor</a>
-        <a href="https://app.spline.design/file/ed7be811-660f-439a-8872-d7f60741a913" target="_blank">Casa</a>
-        <a href="https://app.spline.design/file/48b90580-12a9-41c8-8fbf-2b49cab82daa" target="_blank">Carro</a>
-        <a href="https://app.spline.design/file/bc614c1a-20fd-4e6b-9537-0f73ce55b0fe" target="_blank">Piano</a>
-        <a href="https://app.spline.design/file/8b907047-3577-426d-9279-47d1a08cfe5d" target="_blank">Ciudad</a>
-    </div>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: 555-1234-5678</p>
+        <p>Correo: info@tecnipro.com</p>
+        <p>Horario: Lunes a Viernes, 9:00 a 19:30 hrs</p>
+        <p>Dirección: Calle Principal 123, Ciudad de México</p>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Mi Portafolio 3D. Todos los derechos reservados.</p>
+        <p>© 2024 TecniPro - Todos los derechos reservados.</p>
     </footer>
 </body>
-</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completar Compra - TecniPro</title>
+    <link rel="stylesheet" href="/transaccion.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>TecniPro</h1>
+            <p>¡Servicios de Reparación y Mantenimiento a Domicilio!</p>
+            <button class="btn">Solicitar Técnico</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="compra">
+        <h2>Completar Compra</h2>
+        <div class="compra-container">
+            <div class="productos-seleccionados">
+                <h3>Productos en tu carrito</h3>
+                <ul id="lista-compra">
+                    <li>
+                        <img src="img/destornilladores.png" alt="Juego Destornilladores">
+                        <span>Juego Destornilladores - $450</span>
+                    </li>
+                    <li>
+                        <img src="img/motores.png" alt="Motores Licuadora">
+                        <span>Motores Licuadora - $199</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="formulario-compra">
+                <h3>Datos de Pago</h3>
+                <form>
+                    <label>Nombre: <input type="text" required></label>
+                    <label>Apellido: <input type="text" required></label>
+                    <label>Correo: <input type="email" required></label>
+                    <label>Teléfono: <input type="tel" required></label>
+                    <label>Número de Tarjeta: <input type="text" required></label>
+                    <label>Titular de la Tarjeta: <input type="text" required></label>
+                    <label>Fecha Vencimiento: <input type="month" required></label>
+                    <label>CVV: <input type="text" required></label>
+                    <button type="submit" class="btn-comprar">Comprar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 TecniPro - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

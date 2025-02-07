@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - TecniPro</title>
+    <link rel="stylesheet" href="carrito.css">
+    <script defer src="carrito.js"></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>TecniPro</h1>
+            <p>¡Servicios de Reparación y Mantenimiento a Domicilio!</p>
+            <button class="btn">Solicitar Técnico</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html">Servicios</a></li>
+                <li><a href="/productos.html">Productos</a></li>
+                <li><a href="/index.html">Nosotros</a></li>
+                <li><a href="/index.html">Contacto</a></li>
+                <li><a href="/carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrito">
+        <h2>Carrito</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="lista-carrito">
+                <!-- Aquí se agregarán los productos dinámicamente -->
+            </tbody>
+        </table>
+        <div class="total-container">
+            <h3>Total: $<span id="total">0</span></h3>
+            <button id="btn-comprar">Comprar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 TecniPro - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
